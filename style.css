@@ -1,4 +1,9 @@
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
@@ -39,100 +44,84 @@ body {
 }
 
 .sidebar {
-    background-color: #fff;
-    padding: 15px;
-    height: 100vh;
-    position: fixed;
-    top: 56px;
-    /* Adjust to the height of your navbar */
-    left: 0;
-    width: 250px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    overflow-y: auto;
+    width: 280px;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: 80vh;
 }
 
-.sidebar h3 {
-    margin-top: 20px;
+.create-playlist {
+    flex: 1;
 }
 
 .main-content {
-    margin-left: 250px;
+    flex: 1;
     padding: 20px;
+    overflow-y: auto;
 }
 
-.footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.card {
+    background-color: #fff;
+    border: none;
+}
+
+.circle-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.circle-img img {
     width: 100%;
-    padding: 15px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ddd;
-    text-align: center;
+    height: 100%;
+    object-fit: cover;
 }
 
-.footer a,
-.footer select {
-    display: block;
-    margin-top: 10px;
+.artist-name,
+.song-title {
+    margin: 0;
+}
+
+.artist-title {
+    margin: 0;
+    color: gray;
 }
 
 .music-player {
-    background-color: #282828;
-    color: white;
-    padding: 10px;
     position: fixed;
     bottom: 0;
-    width: calc(100% - 250px);
-    left: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.music-player img {
-    height: 40px;
-}
-
-.music-player .controls {
-    display: flex;
-    align-items: center;
-}
-
-.music-player .controls button {
-    background: none;
-    border: none;
+    width: 100%;
+    background-color: #4CAF50;
+    /* Green background */
     color: white;
-    margin: 0 5px;
+    padding: 10px;
 }
 
-.music-player .progress {
+.album-art {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.song-details {
     flex-grow: 1;
+}
+
+.controls i {
+    font-size: 24px;
     margin: 0 10px;
 }
 
-.music-player .volume {
+.volume {
     display: flex;
     align-items: center;
 }
 
-.music-player .volume input {
-    margin-left: 5px;
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .main-content {
-        margin-left: 0;
-    }
-
-    .music-player {
-        width: 100%;
-        left: 0;
-    }
+.volume i {
+    font-size: 24px;
 }
