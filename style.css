@@ -1,0 +1,138 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar-custom {
+    background-color: #333;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .form-control {
+    color: #fff;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-custom .form-search {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar-custom .form-search .input-group {
+    max-width: 600px;
+    width: 100%;
+}
+
+.navbar-custom .btn-space {
+    margin-left: 10px;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    top: 56px;
+    /* Adjust to the height of your navbar */
+    left: 0;
+    width: 250px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    margin-top: 20px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.footer a,
+.footer select {
+    display: block;
+    margin-top: 10px;
+}
+
+.music-player {
+    background-color: #282828;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 250px);
+    left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-player img {
+    height: 40px;
+}
+
+.music-player .controls {
+    display: flex;
+    align-items: center;
+}
+
+.music-player .controls button {
+    background: none;
+    border: none;
+    color: white;
+    margin: 0 5px;
+}
+
+.music-player .progress {
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.music-player .volume {
+    display: flex;
+    align-items: center;
+}
+
+.music-player .volume input {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .music-player {
+        width: 100%;
+        left: 0;
+    }
+}
