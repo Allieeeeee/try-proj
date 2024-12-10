@@ -1,0 +1,72 @@
+body {
+    background-color: #8db2a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.social-btn {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-btn i {
+    font-size: 1.2em;
+}
+
+.social-btn.google {
+    border-color: #db4437;
+    color: #db4437;
+}
+
+.social-btn.facebook {
+    border-color: #3b5998;
+    color: #3b5998;
+}
+
+.social-btn.apple {
+    border-color: #000;
+    color: #000;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-group {
+    position: relative;
+}
+
+.text-muted {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
